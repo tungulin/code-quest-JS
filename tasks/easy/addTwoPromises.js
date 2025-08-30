@@ -1,6 +1,6 @@
 /*
 Задача:
-Напишите функцию addTwoPromises, которая принимает два промиса и должна сложить результаты (числа) этих промисов независимо от их статуса выполнения.
+Напишите функцию addTwoPromises. Функция принимает два промиса и должна сложить результаты (числа) этих промисов независимо от их статуса выполнения.
 */
 
 const addTwoPromises = async function (promise1, promise2) {
@@ -12,8 +12,6 @@ const addTwoPromises = async function (promise1, promise2) {
   );
 };
 
-console.log(
-  addTwoPromises(Promise.reject(3), Promise.resolve(2)).then((res) =>
-    console.log(res)
-  )
+addTwoPromises(Promise.reject(3), Promise.resolve(2)).then(
+  (res) => console.log(res) // 5
 );

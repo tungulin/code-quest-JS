@@ -6,7 +6,6 @@
 
 - [Описание](#Описание)
 - [Структура репозитория](#Структура-репозитория)
-- [Как использовать](#Как-использовать)
 - [Пример задачи](#Пример-задачи)
 
 ## Описание
@@ -40,7 +39,7 @@ const addTwoPromises = async function (promise1, promise2) {
   );
 };
 
-  addTwoPromises(Promise.reject(3), Promise.resolve(2)).then((res) =>
-    console.log(res) // 5
-  ) 
-
+addTwoPromises(Promise.reject(3), Promise.resolve(2)).then(
+  (res) => console.log(res) // 5
+);
+```
