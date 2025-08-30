@@ -1,6 +1,6 @@
 /*
-Задача:
-Написать свой Promise.All
+  Задача:
+  Написать свой Promise.All
 */
 
 function promiseAll(functions) {
